@@ -10,7 +10,7 @@ $PAGE_ACCESS_TOKEN = 'EAAClw2z6YwIBAKIER5VX50KqDjHNCcotinILSEN8wNgrZC5Pmzu8FaB0a
 $challenge    = $_REQUEST['hub_challenge'];
 $verify_token = $_REQUEST['hub_verify_token'];
 if ($verify_token === $VERIFY_TOKEN) {
-    //If the Verify token matches, return the challenge.
+    //If the Verify token matches, return the challenge, which is defined by FB
     echo $challenge;
 } else {
 
